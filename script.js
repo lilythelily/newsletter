@@ -18,6 +18,10 @@ const mobileDismiss = document.querySelector(".mobile-dismiss");
 function showSuccess() {
   popup.style.display = "block";
   main.classList.add("hide");
+  small.classList.add("hide");
+  email.style.borderColor = "limegreen";
+  email.style.backgroundColor = "white";
+  email.style.color = "hsl(235, 18%, 26%)";
 }
 
 function showError() {
@@ -50,6 +54,10 @@ dismiss.addEventListener("click", (e) => {
 function mobileShowSuccess() {
   mobilePopup.style.display = "block";
   mobileMain.style.opacity = "0%";
+  mobileSmall.classList.add("hide");
+  mobileEmail.style.borderColor = "limegreen";
+  mobileEmail.style.backgroundColor = "white";
+  mobileEmail.style.color = "hsl(235, 18%, 26%)";
 }
 
 function mobileShowError() {
